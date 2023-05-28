@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <script src="https://kit.fontawesome.com/50644514ce.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+        }
+        .hero{
+            position: relative;
+            width:100%;
+            height:100vh;
+            background:rgb(15, 15, 15);
+
+        }
+        nav{
+            display:flex;
+            width:84%;
+            margin:auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        nav ul li{
+            display:inline-block;
+            list-style-type: none;
+            margin: 10px 20px;
+            color:rgb(255, 252, 252);
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+            font-size:larger;
+        }
+        nav ul li a:hover{
+            color:yellow;
+            cursor: pointer;
+        }
+        nav h1{
+            color:white;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .detail{
+            margin-left: 8%;
+            margin-top: 13%;
+        }
+        .detail h1{
+            font-size: 90px;
+            color:rgb(252, 251, 251);
+            margin: 20px 0 20px;
+        }
+        .detail h4{
+            letter-spacing: 2px;
+            font-size: 20px;
+            color: white;
+        }
+        span{
+            color: gold;
+        }
+        .detail p{
+            color: rgb(247, 238, 238);
+            line-height: 22px;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .detail a{
+            background:gold ;
+            padding: 10px 18px;
+            text-decoration:none ;
+            font-weight:bold;
+            color:white ;
+            display:inline-block ;
+            margin:30px 0 ;
+            border-radius:5px ;
+        }
+        .detail a:hover{
+            background: transparent;
+            border:2px solid yellow;
+            cursor: pointer;
+        }
+        .images{
+            width:45% ;
+            height:80% ;
+            position:absolute ;
+            bottom:0 ;
+            right:100px ;
+        }
+        .images img{
+            height:100% ;
+            position:absolute ;
+            left:50% ;
+            bottom:0 ;
+            transform:translateX(-50%) ;
+            transition:bottom 1s left 1s ;      
+         }
+         .images:hover .shape{
+            bottom:40px;
+            cursor:pointer;
+         }
+         .images:hover .guy2{
+            left:45%;
+            cursor:pointer;
+         }
+         footer{
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background:#101010 ;
+            display: flex;
+            flex-direction:column ;
+            align-items:center ;
+            justify-content:center ;
+
+         }
+         footer p1{
+            font-size: 30px;
+            color:white ;
+            margin-bottom:20px ;
+            font-weight:bold ;
+         }
+         footer p{
+            font-size: 17px;
+            color:white ;
+            width: 500px;
+            text-align: center;
+            line-height: 26px;
+            
+         }
+         .soci{
+            display: flex;
+         }
+         .soci a{
+            width:45px;
+            height:45px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background: yellow;
+            border-radius: 50%;
+            margin:22px 10px;
+            color:white;
+            text-decoration: none;
+         }
+         .soci a:hover{
+            transform: scale(1.3);
+            transition: 0.3s;
+         }
+         .end{
+            position: absolute;
+            color:yellow;
+            bottom:35px;
+            font-size: 14px;;
+         }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+           <h1> PORTFO<span>LIO</span></h1>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a>Help</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="detail">
+            <h4>Hello, my name is</h4>
+            <h1>Jeremy <span>Stark</span></h1>
+            <p>I'm a Web Developer 
+                <br>
+            </p>
+            <a>DOWNLOAD CV</a>
+        </div>
+<div class="images">
+    <img src="./shape.png" class="shape">
+    <img src="./guy2.jpg" class="guy2">
+</div>
+    </div>
+    <footer>
+    <p1>Jeremy Stark</p1>
+    <p>
+        For more info pls visit my social media links are given below
+    </p>
+    <div class="soci">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+    </div>
+    <p class="end">Copyrighted by Jeremy Stark</p>
+    </footer>  
+</body>
+</html>
